@@ -1,0 +1,21 @@
+ <div ng-init="getStudents()">
+	<h3>Students List</h3>
+	<table class = "table table-stripped">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>USN</th>	
+			</tr>
+		</thead>
+			<tbody>
+			<tr ng-repeat="std in students">
+			  <td>{{ std.name }}</td>
+			  <td>{{ std.usn }}</td>
+			  <td>
+			  	<a href="#/students/{{student._id}}/edit" class="btn btn-success">Edit</a>
+			  </td>
+			</tr>
+			</tbody>
+		</table>		
+    <div>
+<div>
